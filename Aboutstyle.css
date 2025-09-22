@@ -1,0 +1,176 @@
+
+/* The About Style Page */
+* {
+	padding: 0;
+	margin: 0;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* The Head of the page */
+header {
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.headimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.headnav {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.headnav div {
+    margin: 10px 0;
+}
+
+.headnav a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.headnav a.active {
+    color: #2B9478;
+}
+
+.headnav a:hover {
+    color: #2B9478;
+}
+
+/* The Mian Of The Page */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main div {
+    margin: 5px 15px;
+}
+
+.maintitle {
+    width: 100%;
+    background-color: grey;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mainimg img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.maintext_title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.maintext_p {
+    font-size: 13px;
+}
+
+.maintext_p a {
+    color: #000000;
+}
+
+.maintext_p a:hover {
+    color: grey;
+}
+
+
+/* The footer of the page */
+footer {
+    background: grey;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footertext {
+    margin: 20px 10px 5px 10px;
+}
+
+.footericons {
+    margin: 5px 10px 20px 10px;
+}
+
+.footericons img {
+    margin: 3px;
+}
+
+/* Flexing the whole website */
+@media (min-width: 400px) {
+    .headimg {
+        margin: 30px 0
+    }
+
+    .headnav {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center;
+        margin: 20px 0
+    
+    }
+
+    .headnav div {
+        margin: 10px
+    }
+}
+
+@media (min-width: 650px) {
+    .maintitle {
+        width: 40%;
+    }
+
+    .maintext {
+        width: 65%;
+    }
+
+    footer {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .footertext {
+        margin: 40px 20px;
+    }
+
+    .footericons {
+        margin: 40px 20px;
+    }
+
+    .footericons img {
+        margin: 0 5px
+    }
+}
+
+@media (min-width: 768px) {
+    .maintext {
+        width: 55%;
+    }
+}
